@@ -9,4 +9,4 @@ npm-debug.log
 .bs.js
 package-lock.json
 
-dist/*
+/dist/
