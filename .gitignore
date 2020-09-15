@@ -8,3 +8,5 @@ npm-debug.log
 /.cache
 .bs.js
 package-lock.json
+
+dist/*
