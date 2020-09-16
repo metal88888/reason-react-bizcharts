@@ -24,7 +24,7 @@ external make: (
   ~title: 'title = ?, // boolean | object 图例标题的显示样式设置，如果值为 null，表示不展示图例标题，默认不展示。
   ~background: 'background = ?, // 配置图例的背景框
   ~filter: ('a, 'b, int) => bool = ?, // 筛选数据方法，要指定name才能生效
-  ~onChange: ('event, 'chart) => unit,
+  ~onChange: ('event, 'chart) => unit = ?,
   // 连续
   ~slidable: bool = ?, // 连续图例适用，滑块是否可以滑动。
   ~min: float = ?, // 连续图例适用，选择范围的最小值。
@@ -48,4 +48,6 @@ external make: (
   ~marker: 'marker = ?, // 分类图例适用，图例项的 marker 图标的配置。
   ~flipPage: bool = ?, // 适用于分类图例，当图例项过多时是否进行分页。
   ~reversed: bool = ?, // 分类图例适用，是否将图例项逆序展示。
+
+  ~children: React.element = ?
 ) => React.element = "Legend";

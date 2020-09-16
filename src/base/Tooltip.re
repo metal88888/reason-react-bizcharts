@@ -17,5 +17,5 @@ external make: (
   ~containerTpl: string = ?, // 用于指定图例容器的模板，自定义模板时必须包含各个 dom 节点的 class。
   ~itemTpl: string = ?, // 每项记录的默认模板，自定义模板时必须包含各个 dom 节点的 class
   ~domStyles: 'domStyles = ?, // 传入各个 dom 的样式。
-
+  ~children: React.element = ?,
 ) => React.element = "Tooltip";

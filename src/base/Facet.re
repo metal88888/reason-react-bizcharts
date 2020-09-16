@@ -35,4 +35,6 @@ external make: (
     // ~rowTitle
     // ~columnTitle
 
+    ~children: React.element = ?
+
 ) => React.element = "Facet"

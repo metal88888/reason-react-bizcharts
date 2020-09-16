@@ -11,4 +11,5 @@ external make: (
   ~subTickLine: 'subTickLine = ?, // 前坐标轴次刻度线样式配置
   ~animate: bool = ?, // 动画开关，默认开启。
   ~verticalFactor: int = ?, // 标记坐标轴 label 的方向，左侧为 1，右侧为 -1
+  ~children: React.element = ?,
 ) => React.element = "Axis"

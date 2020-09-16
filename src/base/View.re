@@ -5,4 +5,5 @@ external make: (
   ~scale: 'scale = ?, // 使用同 Chart 的 scale 属性。
   ~padding: 'padding = ?, // 使用同 Chart 的 padding 属性。
   ~animate: bool = ?, // 开启或者关闭动画
+  ~children: React.element = ?
 ) => React.element = "View"

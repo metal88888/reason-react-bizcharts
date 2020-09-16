@@ -11,4 +11,5 @@ external make: (
     ~start: float = ?,
     ~end_: float = ?,
     ~formatter: ('a, 'b, int) => 'c = ?,
+    ~children: React.element = ?
 ) => React.element = "default"

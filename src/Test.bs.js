@@ -1,10 +1,18 @@
 'use strict';
 
 var React = require("react");
-var Annotation$ReasonReactBizcharts = require("./base/Annotation.bs.js");
+var Bizcharts = require("bizcharts");
 
 function Test(Props) {
-  return React.createElement(Annotation$ReasonReactBizcharts.Line.make, {});
+  var style = {
+    height: "20.0px"
+  };
+  return React.createElement("div", {
+              style: style
+            }, React.createElement(Bizcharts.Chart, {
+                  data: [],
+                  style: style
+                }));
 }
 
 var make = Test;
